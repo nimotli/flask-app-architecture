@@ -6,7 +6,6 @@ userRepository = UserRepository()
 
 def authenticate(username, password):
     user = userRepository.findByUserName(username)
-    # user = User.query.filter_by(username=username).first()
     if user and check_password_hash(user.password,password):
         return user
 
