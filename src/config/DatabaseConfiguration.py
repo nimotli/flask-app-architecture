@@ -1,6 +1,5 @@
 
 def init_db(app,env):
-    #implement later
     datasource = env['datasource']
     dbtype=datasource.get('type')
     host=datasource.get('host')
@@ -16,3 +15,4 @@ def init_db(app,env):
     print("Initialized the {} database".format(dbtype))
     print("-"*40)
     return app
+

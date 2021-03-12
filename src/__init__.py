@@ -7,6 +7,7 @@ from src.config.Environment import db,migrate
 from src.config.AuthenticationProvider import authenticate,identity
 from src.config.Configure import configure_app
 import os
+
 def create_app(profile="dev"):
     app = Flask(__name__, instance_relative_config=True)
     try:
