@@ -4,5 +4,6 @@
         "host":"",
         "username":"",
         "password":""
-    }
+    },
+    "monitoring_path":"./resources/config/monitoring/monitoring-dev.cfg"
 }

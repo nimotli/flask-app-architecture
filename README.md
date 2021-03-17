@@ -70,3 +70,7 @@ The app comes preconfigured with a testing profile that gets used when the tests
 - You can add your fixtures to tests/conftest.py
 ### Routing
 
+### Monitoring
+  - You can access the monitoring dashboard using this url host:ip/dashboard
+  - You can authenticate using the credentials in the config files in resources/config/monitoring/
+  - For a detailed documentation from the package's developers [Documentation](https://flask-monitoringdashboard.readthedocs.io/en/latest/index.html)

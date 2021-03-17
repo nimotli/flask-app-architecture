@@ -1,4 +1,5 @@
 from src.config.ApplicationProperties import getEnv
+import flask_monitoringdashboard as dashboard
 
 
 def configure_app(app,profile):
@@ -16,3 +17,7 @@ def configure_app(app,profile):
     app.config['SECRET_KEY'] = env['jwt_secret']
     app.config['JWT_AUTH_URL_RULE'] = env['auth_url']
     return app,env
+
+def configure_monitoring(env):
+    dashboard.config.init_from(file=env['monitoring_path'])
+    return dashboard

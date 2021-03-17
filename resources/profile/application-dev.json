@@ -3,11 +3,12 @@
         "type":"mysql+pymysql",
         "driver":"{SQL Server Native Client 11.0}",
         "host":"localhost",
-        "database":"sandbox",
+        "database":"sandbox.db",
         "port":"3306",
         "username":"sandboxUser",
         "password":"sandboxPassword"
     },
     "jwt_secret":"G1GCRMXEpH9WgC0",
-    "auth_url":"/api/authenticate"
+    "auth_url":"/api/authenticate",
+    "monitoring_path":"./resources/config/monitoring/monitoring-dev.cfg"
 }
