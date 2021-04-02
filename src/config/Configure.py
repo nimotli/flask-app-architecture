@@ -1,5 +1,6 @@
 from src.config.ApplicationProperties import getEnv
 import flask_monitoringdashboard as dashboard
+from flask_caching import Cache
 
 
 def configure_app(app,profile):
@@ -21,3 +22,5 @@ def configure_app(app,profile):
 def configure_monitoring(env):
     dashboard.config.init_from(file=env['monitoring_path'])
     return dashboard
+def configure_caching(cache,env):
+    cache.config=env['caching']

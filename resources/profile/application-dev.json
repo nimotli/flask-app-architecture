@@ -3,10 +3,15 @@
         "type":"mysql+pymysql",
         "driver":"{SQL Server Native Client 11.0}",
         "host":"localhost",
-        "database":"sandbox.db",
+        "database":"sandbox",
         "port":"3306",
         "username":"sandboxUser",
         "password":"sandboxPassword"
+    },
+    "caching" : {
+        "DEBUG": true,          
+        "CACHE_TYPE": "SimpleCache",  
+        "CACHE_DEFAULT_TIMEOUT": 300
     },
     "jwt_secret":"G1GCRMXEpH9WgC0",
     "auth_url":"/api/authenticate",

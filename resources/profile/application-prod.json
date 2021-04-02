@@ -5,5 +5,10 @@
         "username":"",
         "password":""
     },
+    "caching" : {
+        "DEBUG": false,          
+        "CACHE_TYPE": "SimpleCache",  
+        "CACHE_DEFAULT_TIMEOUT": 300
+    },
     "monitoring_path":"./resources/config/monitoring/monitoring-dev.cfg"
 }
