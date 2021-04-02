@@ -68,5 +68,15 @@ The app comes preconfigured with a testing profile that gets used when the tests
 - You can add your tests to tests/
 - There are already some fixtures (for creating a user object and for initializing the test client and creating a tests database and migrating you tables to it)
 - You can add your fixtures to tests/conftest.py
+### Caching 
+Caching is supported through Flask-Caching, you can simply use it by :
+- Importing the cache object from the Environment (from src.config.Environment import cache)
+- Add the cached decorator to the api or function you want cached (@cache.cached(timeout=50))
+- The config for the package can be found on resources/profile/application-*.json ->> caching
+- For a detailed documentation from the package's developers [Documentation](https://flask-caching.readthedocs.io/en/latest/)
 ### Routing
 
+### Monitoring
+  - You can access the monitoring dashboard using this url host:ip/dashboard
+  - You can authenticate using the credentials in the config files in resources/config/monitoring/
+  - For a detailed documentation from the package's developers [Documentation](https://flask-monitoringdashboard.readthedocs.io/en/latest/index.html)

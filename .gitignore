@@ -11,3 +11,4 @@ src/sandbox
 dist/
 build/
 *.egg-info/
+*.db

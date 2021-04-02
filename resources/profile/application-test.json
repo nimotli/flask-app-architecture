@@ -4,5 +4,6 @@
         "database":"sandbox"
     },
     "jwt_secret":"G1GCRMXEpH9WgC0",
-    "auth_url":"/api/authenticate"
+    "auth_url":"/api/authenticate",
+    "monitoring_path":"./resources/config/monitoring/monitoring-dev.cfg"
 }
